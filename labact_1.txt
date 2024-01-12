@@ -1,0 +1,32 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        {
+            Console.WriteLine("~Pounds to Kilograms Converter~");
+            Console.Write("Weight in Pounds(lbs): ");
+            int pounds = Convert.ToInt32(Console.ReadLine());
+            double kilograms = pounds * 0.453592;
+            Console.WriteLine("Weight converted to Kilograms(kg): " + kilograms);
+        }
+        {
+            Console.WriteLine("\n~Miles to Kilometers~");
+            Console.Write("Length in Miles(mi): ");
+            int miles = Convert.ToInt32(Console.ReadLine());
+            double kilometers = miles * 1.609344;
+            Console.WriteLine("Length in Kilometers(km): " + kilometers);
+        }
+        {
+            Console.WriteLine("\n~Fahrenheit to Celsius~");
+            Console.Write("Temperature in Fahrenheit(°F): ");
+            int fahrenheit = Convert.ToInt32(Console.ReadLine());
+            double celsius = (fahrenheit - 32) * 5 / 9;
+            Console.WriteLine("Temperature in Celsius(°C): " + celsius);
+        }
+        {
+            Console.WriteLine("\n~Average~");
+        }
+    }
+}
