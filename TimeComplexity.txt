@@ -1,0 +1,141 @@
+import java.util.Scanner;
+
+public class LabAct_1 {
+    public static int ctr = 0;
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ctr++;
+
+        System.out.println("Welcome to the Chore Routine");
+        ctr++;
+
+        String[] chores = { "Clean the kitchen", "Vacuum the living room", "Do the laundry", "Exit" };
+        ctr++;
+        ctr++;
+        for (int i = 0; i < chores.length; i++) {
+            ctr++;
+            ctr++;
+            System.out.println((i + 1) + ". " + chores[i]);
+            ctr++;
+        }
+
+        System.out.println("Please select a chore:");
+        ctr++;
+
+        int choice = scanner.nextInt();
+        ctr++;
+
+        switch (choice) {
+            case 1:
+                cleanKitchen();
+                ctr++;
+                System.out.println(ctr);
+                ctr++;
+                break;
+            case 2:
+                vacuumLivingRoom();
+                ctr++;
+                System.out.println(ctr);
+                ctr++;
+                break;
+            case 3:
+                doLaundry();
+                ctr++;
+                System.out.println(ctr);
+                ctr++;
+                break;
+            case 4:
+                System.out.println("Exiting the program.");
+                ctr++;
+                ctr++;
+                ctr++;
+                System.out.println(ctr);
+                break;
+            default:
+                System.out.println("Invalid choice. Please try again.");
+                ctr++;
+        }
+
+        scanner.close();
+        ctr++;
+    }
+
+    public static void cleanKitchen() {
+        System.out.println("\nCleaning the kitchen:");
+        ctr++;
+        System.out.println("Step 1: Clear the countertops");
+        ctr++;
+        System.out.println("Step 2: Wash the dishes");
+        ctr++;
+        System.out.println("Step 3: Wipe down the surfaces");
+        ctr++;
+        System.out.println("Step 4: Clean the stove and oven");
+        ctr++;
+        System.out.println("Step 5: Scrub the sink");
+        ctr++;
+        System.out.println("Step 6: Clean the refrigerator");
+        ctr++;
+        System.out.println("Step 7: Sweep the floor");
+        ctr++;
+        System.out.println("Step 8: Mop the floor");
+        ctr++;
+        System.out.println("Step 9: Clean the windows");
+        ctr++;
+        System.out.println("Step 10: Put everything back in its place");
+        ctr++;
+
+    }
+
+    public static void vacuumLivingRoom() {
+        System.out.println("\nVacuuming the living room:");
+        ctr++;
+        System.out.println("Step 1: Remove any obstacles from the floor");
+        ctr++;
+        System.out.println("Step 2: Move furniture to access all areas");
+        ctr++;
+        System.out.println("Step 3: Vacuum the floor");
+        ctr++;
+        System.out.println("Step 4: Vacuum under the furniture");
+        ctr++;
+        System.out.println("Step 5: Vacuum the upholstery");
+        ctr++;
+        System.out.println("Step 6: Empty the vacuum cleaner");
+        ctr++;
+        System.out.println("Step 7: Clean the vacuum filter");
+        ctr++;
+        System.out.println("Step 8: Return furniture to its original position");
+        ctr++;
+        System.out.println("Step 9: Put away the vacuum cleaner");
+        ctr++;
+        System.out.println("Step 10: Enjoy your clean living room");
+        ctr++;
+
+    }
+
+    public static void doLaundry() {
+        System.out.println("\nDoing the laundry:");
+        ctr++;
+        System.out.println("Step 1: Sort the laundry by color and fabric type");
+        ctr++;
+        System.out.println("Step 2: Pre-treat any stains");
+        ctr++;
+        System.out.println("Step 3: Load the washing machine");
+        ctr++;
+        System.out.println("Step 4: Add detergent and set the appropriate cycle");
+        ctr++;
+        System.out.println("Step 5: Start the washing machine");
+        ctr++;
+        System.out.println("Step 6: Transfer the clothes to the dryer or hang them to dry");
+        ctr++;
+        System.out.println("Step 7: Set the appropriate drying cycle");
+        ctr++;
+        System.out.println("Step 8: Start the dryer or hang the clothes to dry");
+        ctr++;
+        System.out.println("Step 9: Fold or hang the dry clothes");
+        ctr++;
+        System.out.println("Step 10: Put everything away");
+        ctr++;
+
+    }
+}
